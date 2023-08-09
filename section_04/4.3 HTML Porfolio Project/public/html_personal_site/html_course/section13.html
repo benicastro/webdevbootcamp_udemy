@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Frames</title>
+  </head>
+
+  <body>
+    <h1>Section 13: HTML Frames</h1>
+    <p>What I've learned:</p>
+    <ol>
+      <li>What are <strong> HTML frames </strong>?</li>
+      <li>How to create HTML frames?</li>
+      <li>Important frame attributes</li>
+      <li>Why we should avoid frames?</li>
+      <li>How to cover frames failure?</li>
+    </ol>
+    <hr />
+    <h3>The concept of HTML frames is deprecated for HTML5.</h3>
+    <p>
+      <strong> HTML frames </strong> are HTML elements that allow us to divide
+      the screen in separate independent parts.
+    </p>
+    <p>
+      HTML frames can be created with <strong> &lt; frameset &gt; </strong> and
+      <strong> &lt; frame &gt; </strong> HTML elements.
+    </p>
+
+    <p>
+      &lt;frameset rows="50%,50%"&gt; <br />
+      . &lt;frame name="frame1" src="Frame1.html"/&gt; <br />
+      . &lt;frame name="frame2" src="Frame2.html"/&gt; <br />
+      &lt;/frameset rows="50%,50%"&gt;
+    </p>
+
+    <p>
+      Frameset was used before instead of the body element. It acts as a
+      container for the frames to be created in the webpage.
+    </p>
+    <p>
+      The important attributes for the frameset element include
+      <strong> cols </strong> and <strong> rows </strong> that represent the
+      number of columns or rows of the screen division, respectively, while for
+      the frame element, we have <strong> src </strong> that represents the
+      document that will be loaded, and <strong> name </strong> which represents
+      the unique name for that frame.
+    </p>
+    <p>Why we should avoid frames?</p>
+    <ul>
+      <li>Frames are deprecated from HTML5.</li>
+      <li>Frames are acting weird on small size devices.</li>
+      <li>Some browsers do not support HTML frames.</li>
+      <li>For some browsers, the back button doesn't work as it should.</li>
+    </ul>
+    <p>
+      Frames failure can be covered with
+      <strong> &lt; noframes &gt; </strong> HTML element where we can place
+      anything that we want to display in cases when frames are not working for
+      any reason.
+    </p>
+    <br />
+    <hr />
+    <button
+      type="button"
+      name="button"
+      onclick="window.location.href='html_course_index.html';"
+    >
+      Home
+    </button>
+  </body>
+</html>

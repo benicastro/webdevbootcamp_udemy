@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Iframe</title>
+  </head>
+
+  <body>
+    <h1>Section 14: HTML Iframe</h1>
+    <p>What I've learned:</p>
+    <ol>
+      <li>What is <strong> HTML Iframe </strong>?</li>
+      <li>What are <strong> Iframe attributes </strong>?</li>
+    </ol>
+    <hr />
+    <p>
+      <strong> HTML Iframe </strong> is an HTML element that allows us to create
+      a rectangular region inside of our HTML document where we can load the
+      content of another HTML document or the content of another website.
+    </p>
+    <br />
+    <p>&lt; iframe src="IframeContent" &gt;&lt; /iframe &gt;</p>
+    <br />
+    <p>What are Iframe attributes?</p>
+    <ul>
+      <li>src</li>
+      <li>frameborder</li>
+      <li>width</li>
+      <li>height</li>
+      <li>marginwidth</li>
+      <li>marginheight</li>
+      <li>scrolling</li>
+    </ul>
+    <p>
+      <strong> src </strong> is used to set the HTML document or website address
+      that we want to load like the content of the iframe.
+    </p>
+    <p>
+      <strong> frameborder </strong> is used to enable or disable the frame
+      border that goes around of the iframe.
+    </p>
+    <p><strong> width </strong> is used to set the width for the iframe.</p>
+    <p><strong> height </strong> is used to set the height for the iframe.</p>
+    <p>
+      <strong> marginwidth </strong> represents the distance between the left
+      and right frame border, and frame content.
+    </p>
+    <p>
+      <strong> marginheight </strong> represents the distance between the top
+      and bottom frame border, and frame content.
+    </p>
+    <p>
+      <strong> scrolling </strong> is used to enable or disable scrolling inside
+      of the iframe.
+    </p>
+    <p>
+      The important attributes for the frameset element include
+      <strong> cols </strong> and <strong> rows </strong> that represent the
+      number of columns or rows of the screen division, respectively, while for
+      the frame element, we have <strong> src </strong> that represents the
+      document that will be loaded, and <strong> name </strong> which represents
+      the unique name for that frame.
+    </p>
+    <iframe
+      src="https://compphysics.github.io/MLErasmus/doc/web/course.html"
+      frameborder="1"
+      width="500"
+      height="200"
+    ></iframe>
+    <iframe
+      src="../iframe/content.html"
+      scrolling="no"
+      frameborder="0"
+      width="500"
+      height="200"
+    ></iframe>
+    <iframe
+      src="../iframe/content.html"
+      marginwidth="50"
+      marginheight="50"
+      width=""
+      height="200"
+    ></iframe>
+    <br />
+    <hr />
+    <button
+      type="button"
+      name="button"
+      onclick="window.location.href='html_course_index.html';"
+    >
+      Home
+    </button>
+  </body>
+</html>

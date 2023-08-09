@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Forms</title>
+  </head>
+
+  <body>
+    <h1>Section 15: HTML Forms</h1>
+    <p>What I've learned:</p>
+    <ol>
+      <li>What is an <strong> HTML form </strong>?</li>
+      <li>HTML form structure</li>
+      <li>Important form attributes</li>
+    </ol>
+    <hr />
+    <p>
+      <strong> HTML form </strong> is an HTML element that we use to get data
+      from website users and send that data to a server for server-side data
+      processing.
+    </p>
+    <form class="" action="" method="get" target="_self">
+      <input type="text" name="username" value="" />
+      <input type="password" name="password" value="" />
+      <input type="submit" name="" value="SUBMIT" />
+    </form>
+    <p>What are the important form attributes?</p>
+    <ul>
+      <li>action</li>
+      <li>method</li>
+      <li>target</li>
+    </ul>
+    <p>
+      The <strong> action </strong> attribute is where we set the name of the
+      server-side script that will do the data processing.
+    </p>
+    <p>
+      The <strong> method </strong> attribute is where we set the HTTP method
+      that we will use to send our data on the server for data processing.
+    </p>
+    <p>
+      The <strong> target </strong> attribute is where we want to display the
+      result of server-side data processing.
+    </p>
+    <form class="" action="" method="post" target="_self">
+      Username: <input type="text" name="username" value="" /> <br /><br />
+      Password: <input type="password" name="password" value="" /> <br /><br />
+      <input type="submit" name="" value="SUBMIT" />
+    </form>
+    <br />
+    <hr />
+    <button
+      type="button"
+      name="button"
+      onclick="window.location.href='html_course_index.html';"
+    >
+      Home
+    </button>
+  </body>
+</html>

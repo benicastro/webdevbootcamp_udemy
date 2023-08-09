@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Tables</title>
+  </head>
+
+  <body>
+    <h1>Section 10: HTML Tables</h1>
+    <p>What I've learned:</p>
+    <ol>
+      <li>What are <strong> HTML tables </strong>?</li>
+      <li>HTML table structure?</li>
+      <li>How to set table height and width?</li>
+      <li>
+        What are <strong> cellpadding </strong> and
+        <strong> cellspacing </strong>?
+      </li>
+      <li>
+        What are <strong> colspan </strong> and <strong> rowspan </strong>?
+      </li>
+      <li>
+        What are
+        <strong>
+          table sections &lt; thead &gt;, &lt; tbody &gt;, &lt; tfoot
+          &gt;</strong
+        >?
+      </li>
+    </ol>
+    <hr />
+    <p>
+      <strong> HTML tables </strong> are <strong> HTML elements </strong> that
+      we use to display tables inside of our webpages.
+    </p>
+    <h3>HTML Table Structure</h3>
+    <p style="text-align: center">
+      <img
+        src="../images/table_structure.jpg"
+        alt="table_structure"
+        width="50%"
+        height="auto"
+        align="center"
+      />
+    </p>
+    <table border="1">
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Benedict</td>
+        <td>Castro</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Milytoni</td>
+        <td>Ebo</td>
+      </tr>
+    </table>
+    <p>
+      Table height and width can be set with height and width HTML attributes
+      that we add to the table start tag.
+    </p>
+    <table border="1" height="143" width="250">
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Benedict</td>
+        <td>Castro</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Milytoni</td>
+        <td>Ebo</td>
+      </tr>
+    </table>
+    <p>
+      <strong> cellpadding </strong> defines the distance between cell content
+      and cell border, while <strong> cellspacing </strong> defines the distance
+      between table cells.
+    </p>
+    <p>
+      <strong> colspan </strong> is an HTML attribute that allows us to merge
+      two or more columns in one, while <strong> rowspan </strong> is an HTML
+      attribute that allows us to merge two or more rows in one.
+    </p>
+    <table border="1" cellpadding="10" cellspacing="5">
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+      <tr>
+        <td colspan="2">colspan</td>
+        <td>sample data</td>
+      </tr>
+      <tr>
+        <td rowspan="2">rowspan</td>
+        <td>sample data</td>
+        <td>sample data</td>
+      </tr>
+      <tr>
+        <td>sample data</td>
+        <td>sample data</td>
+      </tr>
+    </table>
+    <p>
+      Table sections are predefined positions in a table. All rows that belong
+      to the &lt;<strong> thead </strong>&gt; &lt;<strong> /thead </strong>&gt;
+      section will be displayed at the top of the table. In addition, all rows
+      that belong to the &lt;<strong> tbody </strong>&gt; &lt;<strong>
+        /tbody </strong
+      >&gt; section will be displayed in the middle of the table. Moreover, all
+      rows that belong to the &lt;<strong> tfoot </strong>&gt; &lt;<strong>
+        /tfoot </strong
+      >&gt; section will be displayed at the bottom of the table regardless of
+      whether we place that section on the top or on the bottom of the
+      &lt;<strong> table </strong>&gt; &lt;<strong> /table </strong>&gt; HTML
+      element.
+    </p>
+    <br />
+    <hr />
+    <button
+      type="button"
+      name="button"
+      onclick="window.location.href='html_course_index.html';"
+    >
+      Home
+    </button>
+  </body>
+</html>

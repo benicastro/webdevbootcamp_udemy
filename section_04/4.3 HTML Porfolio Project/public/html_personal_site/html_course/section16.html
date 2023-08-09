@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form Elements</title>
+  </head>
+
+  <body>
+    <h1>Section 16: Form Elements</h1>
+    <p>What I've learned:</p>
+    <ol>
+      <li>What are <strong> HTML form elements </strong>?</li>
+      <li>What are the most common form elements?</li>
+      <li>What is <strong> &lt; input &gt; </strong> element?</li>
+      <li>What is <strong> &lt; select &gt; </strong> element?</li>
+      <li>What is <strong> &lt; textarea &gt; </strong> element?</li>
+      <li>What is <strong> &lt; button &gt; </strong> element?</li>
+      <li>What is <strong> &lt; datalist &gt; </strong> element?</li>
+    </ol>
+    <hr />
+    <p>
+      <strong> HTML form elements </strong> are HTML elements that we use to use
+      to create HTML forms.
+    </p>
+    <p>What are the common form elements?</p>
+    <ul>
+      <li>input</li>
+      <li>select</li>
+      <li>textarea</li>
+      <li>button</li>
+      <li>datalist</li>
+    </ul>
+    <p>
+      The <strong> &lt; input &gt; </strong> element is an HTML element used to
+      create various types of form elements like text field, password field,
+      submit button, reset button, radio buttons, checkboxes, etc.
+    </p>
+    <p>
+      The <strong> &lt; select &gt; </strong> element is an HTML element used to
+      create a drop-down list.
+    </p>
+    <select class="" name="" id="fruits" size="5" multiple>
+      <option value="banana" selected>Banana</option>
+      <option value="orange">Orange</option>
+      <option value="lemon">Lemon</option>
+    </select>
+    <p>
+      The <strong> &lt; textarea &gt; </strong> element is an HTML element used
+      to create a multiline input text field.
+    </p>
+    <textarea name="comment" rows="8" cols="80"></textarea>
+    <p>
+      The <strong> &lt; button &gt; </strong> element is an HTML element used to
+      create clickable buttons.
+    </p>
+    <button type="button" name="button">BUTTON</button>
+    <p>Types of buttons:</p>
+    <dl class="">
+      <dt>button</dt>
+      <dd>button for which we need to define an on-click function</dd>
+      <dt>submit</dt>
+      <dd>
+        button that takes all values from HTML form and sends it to the server
+        for data processing
+      </dd>
+      <dt>reset</dt>
+      <dd>
+        button that represents all values from HTML form on initial values
+      </dd>
+    </dl>
+    <p>
+      The <strong> &lt; datalist &gt; </strong> element is an HTML element that
+      represents combined versions of input text field and drop-down list.
+    </p>
+    <input type="text" name="" value="" list="colors" />
+    <datalist class="" id="colors">
+      <option value="red"></option>
+      <option value="blue"></option>
+      <option value="yellow"></option>
+      <option value="green"></option>
+    </datalist>
+    <p>
+      The <strong> list </strong> attribute is where we set the data list that
+      we want to connect with the input field. This value needs to be the same
+      as the <strong> id value </strong> for data list.
+    </p>
+    User: <input type="text" name="" value="" /> <br /><br />
+    Role: <br />
+    <select class="" name="" id="roles" size="3">
+      <option value="administrator">Administrator</option>
+      <option value="developer" selected>Developer</option>
+      <option value="guest">Guest</option>
+    </select>
+    <br /><br />
+    Comment: <br />
+    <textarea name="name" rows="8" cols="80"></textarea><br /><br />
+    Comment Type: <br />
+    <input type="text" name="" value="" list="commentType" />
+    <datalist class="" id="commentType">
+      <option value="Suggestion"></option>
+      <option value="Like"></option>
+      <option value="Dislike"></option>
+    </datalist>
+    <br /><br />
+    <button
+      type="button"
+      name="button"
+      onclick="alert('Your comment has been sent')"
+    >
+      Send comment
+    </button>
+    <button type="reset">Reset</button>
+    <br />
+    <hr />
+    <button
+      type="button"
+      name="button"
+      onclick="window.location.href='html_course_index.html';"
+    >
+      Home
+    </button>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Links</title>
+  </head>
+
+  <body>
+    <h1>Section 12: HTML Links</h1>
+    <p>What I've learned:</p>
+    <ol>
+      <li>
+        What are <strong> HTML links </strong> or <strong> hyperlinks </strong>?
+      </li>
+      <li>How to create HTML links?</li>
+      <li>What is a <strong> text link </strong>?</li>
+      <li>What is an <strong> image link </strong>?</li>
+      <li>What is an <strong> email link </strong>?</li>
+    </ol>
+    <hr />
+    <p>
+      <strong> HTML links </strong> or <strong> hyperlinks </strong> are HTML
+      elements that allow us to redirect website users from one webpage to
+      another webpage.
+    </p>
+    <p>
+      <strong> HTML links </strong> or <strong> hyperlinks </strong> can be
+      created with <strong> &lt; a &gt; &lt; /a &gt; (anchor) </strong> tags.
+    </p>
+    <p>
+      The <strong> href </strong> attribute represents the destination page
+      where we want to be redirected.
+    </p>
+    <p>
+      The <strong> target </strong> attribute represents how we want to be
+      redirected on a new page.
+    </p>
+    <dl>
+      <dt>_self</dt>
+      <dd>redirects on the same page tab</dd>
+      <dt>_blank</dt>
+      <dd>redirects on a new page tab</dd>
+    </dl>
+    <p>
+      <strong> Text link </strong> is an HTML link that is displayed like a
+      plain text inside of a webpage.
+    </p>
+    <p>
+      <span align="left">
+        <a href="section11.html" target="_self"> Previous Lesson </a>
+      </span>
+      <span style="float: right">
+        <a href="section13.html" target="_self"> Next Lesson </a>
+      </span>
+    </p>
+    <p>
+      <strong> Image link </strong> is an HTML link that is displayed like an
+      image text inside of a webpage.
+    </p>
+    <p style="text-align: center">
+      <a href="extra.html" target="_blank">
+        <img
+          src="../images/castro_fam.jpg"
+          alt="Castro Family <3"
+          width="50%"
+          height="auto"
+        />
+      </a>
+    </p>
+    <p>
+      <strong> Email link </strong> is an HTML link that allows us to open a
+      default email sending software and predefine an email destination address.
+    </p>
+    <a href="mailto:benedict.zcastro@gmail.com"> Email </a>
+    <br />
+    <hr />
+    <button
+      type="button"
+      name="button"
+      onclick="window.location.href='html_course_index.html';"
+    >
+      Home
+    </button>
+  </body>
+</html>

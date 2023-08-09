@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Restriction Attributes</title>
+  </head>
+
+  <body>
+    <h1>Section 19: Restriction Attributes</h1>
+    <p>What I've learned:</p>
+    <ol>
+      <li>What are <strong>restriction attributes</strong>?</li>
+      <li>What is <strong>disabled</strong> attribute?</li>
+      <li>What is <strong>readonly</strong> attribute?</li>
+      <li>What is <strong>required</strong> attribute?</li>
+      <li>What is <strong>size</strong> attribute?</li>
+      <li>What is <strong>step</strong> attribute?</li>
+      <li>What is <strong>pattern</strong> attribute?</li>
+      <li>What is <strong>min and max</strong> attributes?</li>
+      <li>What is <strong>minlength and maxlength</strong> attributes?</li>
+    </ol>
+    <hr />
+    <p>
+      <strong>Restriction attributes</strong> are attributes that we use to
+      restrict the default behavior of HTML elements.
+    </p>
+    <p>
+      The <strong>disabled</strong> attribute is a restriction attribute that we
+      use to disable an HTML element.
+    </p>
+    <p>
+      The <strong>readonly</strong> attribute is a restriction attribute that we
+      use to restrict an HTML element where its value can only be read and
+      cannot be changed.
+    </p>
+    <p>
+      The <strong>required</strong> attribute is a restriction attribute that we
+      use to require web users to enter values in the specific field.
+    </p>
+    <p>
+      The <strong>size</strong> attribute is a restriction attribute that we use
+      to define or restrict the width of an input field measured by the number
+      of characters.
+    </p>
+    <p>
+      The <strong>step</strong> attribute is a restriction attribute that we use
+      to define a valid step that will be used in the input field.
+    </p>
+    <p>
+      The <strong>pattern</strong> attribute is a restriction attribute that we
+      use to define a pattern that will be needed to populate the input field.
+    </p>
+    <p>
+      The <strong>min</strong> and <strong>max</strong> attributes are
+      restriction attributes that we use to define the minimum and maximum
+      values needed to populate the input field.
+    </p>
+    <p>
+      The <strong>minlength</strong> and <strong>maxlength</strong> attributes
+      are restriction attributes that we use to define the minimum and maximum
+      number of characters needed to populate the input field.
+    </p>
+
+    <hr />
+    <form action="" method="GET" target="_self">
+      Name: <input type="text" name="name" id="" value="User" disabled />
+      <br /><br />
+      Surname: <input type="text" name="name" id="" value="Web" readonly />
+      <br /><br />
+      Address:
+      <input type="text" name="name" id="" value="required" required />
+      <br /><br />
+      Gender: <input type="text" name="name" id="" size="6" /> <br /><br />
+      Donate:
+      <input type="number" name="numberField" id="" value="5" step="5" />
+      <br /><br />
+      Tel:
+      <input
+        type="tel"
+        name="telField"
+        id=""
+        value="123-456-789"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+      />
+      <br /><br />
+      Age:
+      <input type="number" name="numberField" id="" min="18" max="100" /> (18+)
+      <br /><br />
+      Comment:
+      <input type="text" name="name" id="" minlength="5" maxlength="10" />
+
+      <br /><br />
+      <input type="submit" value="SUBMIT" />
+      <input type="reset" value="RESET" />
+    </form>
+
+    <!--
+  <p> The <strong> &lt; input &gt; </strong> element is an HTML element that we
+    use to create various type of elements like:
+    <ul>
+      <li> input text field </li>
+      <li> password field </li>
+      <li> radio buttons </li>
+      <li> checkboxes </li>
+    </ul>
+  </p>
+  <p> The basic structure of an input element is: </p>
+  <p> &lt;input <span style="color: blue"> type="inputType" </span>
+    <span style="color: orange"> name="inputName" </span>
+    <span style="color: green"> value="initialValue"/&gt </span>
+  </p>
+  <dl class="">
+    <dt> type </dt>
+    <dd> represents the type of input element </dd>
+    <dt> name </dt>
+    <dd> represents the unique name for the input element </dd>
+    <dt> value </dt>
+    <dd> represents the initial value for the input element </dd>
+  </dl>
+  <input type="text" name="username" value="Milyastroc">
+  <p> The different input element types are: </p>
+  <ul>
+    <li> text </li>
+    <li> password </li>
+    <li> reset </li>
+    <li> submit </li>
+    <li> radio </li>
+    <li> checkbox </li>
+    <li> button </li>
+    <li> file </li>
+    <li> image </li>
+  </ul>
+  <form class="" action="" method="">
+    <p>
+      Username: <input type="text" name="username" id=""> <br><br>
+      Password: <input type="password" name="password" value=""> <br><br>
+      Gender: Male <input type="radio" name="gender" value="male" checked>
+      Female <input type="radio" name="gender" value="female"> <br><br>
+      Allow data access: Yes <input type="checkbox" name="data1" value="yes">
+      No <input type="checkbox" name="data2" value="no"> <br><br>
+      <input type="file" name="" value="" accept="image/*"> <br><br>
+      <input type="image" src="../images/astroc.ico" height="25" width="25"> <br><br>
+      <input type="submit" value="SUBMIT"> <input type="reset" value="RESET">
+    </p>
+  </form> -->
+    <br />
+    <hr />
+    <button
+      type="button"
+      name="button"
+      onclick="window.location.href='html_course_index.html';"
+    >
+      Home
+    </button>
+  </body>
+</html>
